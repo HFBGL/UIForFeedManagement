@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+span.form-control-select.form-control-select2.select2.select2-container {
+  height: 70px;
+  width: calc(100% - 8px) !important;
+  position: absolute;
+  display: block;
+  line-height: 70px;
+  border: 1px solid #29abe2 !important;
+  text-align: center;
+  background: #c4e5f6;
+  border-radius: 3px;
+}

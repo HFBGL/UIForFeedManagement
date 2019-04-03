@@ -10,6 +10,10 @@
   margin-right: 5px;
 }
 
+.btn-group .btn {
+  margin-right: 0px;
+}
+
 .row.padding-top {
   padding-top: 15px;
 }
@@ -122,7 +126,12 @@ span.label.capsule-label {
   display: inline-block;
   position: relative;
   padding: 0px;
+  top: 6px;
   margin-right: 10px;
+}
+
+.well.sp-marginFix.no-mrg p {
+  margin-bottom: 0px;
 }
 
 span.valholder {
@@ -627,4 +636,13 @@ li.selctor-hold .form-group {
 
 .selectize-dropdown-content {
   padding: 0px;
+}
+
+.section-heading {
+  color: #4a4a4a;
+  display: inline-block;
+  font-size: 18px;
+  top: -7px;
+  margin-bottom: 10px;
+  position: relative;
 }
