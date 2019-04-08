@@ -1,5 +1,5 @@
 import { Component, AfterViewInit , OnInit} from '@angular/core';
-import { Select2OptionData } from 'ng2-select2';
+import { Select2TemplateFunction, Select2OptionData  } from 'ng2-select2';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,9 @@ export class AppComponent implements OnInit {
   title = 'app';
 
   public exampleData: Array<Select2OptionData>;
+  public exampletempateData: Array<Select2OptionData>;
   public options: Select2Options;
+  public optionstempate: Select2Options;
 
 
 
@@ -39,11 +41,79 @@ export class AppComponent implements OnInit {
       theme: 'form-control form-control-select2 form-control-select'
     }
 
+    this.exampletempateData = [
+      {
+        id: '475869',
+        text: 'Fund 01',
+        additional : {
+          image : 'assets/anz.png',
+          winner : '001'
+        }
+      },
+      {
+        id: '89564849',
+        text: 'Fund 02',
+        additional : {
+          image : './assets/cba.png',
+          winner : '001'
+        }
+      },
+      {
+        id: '456586',
+        text: 'Fund 03',
+        additional : {
+          image : '../assets/bgl.png',
+          winner : '001'
+        }
+      },
+      {
+        id: '8458603',
+        text: 'Fund 04',
+        additional : {
+          image : '../assets/cup.png',
+          winner : '001'
+        }
+      }
+    ];
+
+    this.optionstempate = {
+      templateResult: this.templateResult,
+      templateSelection: this.templateSelection,
+    }
+
   }
 
   ngAfterViewInit(){
 
+  }
 
+  // function for result template
+  public templateResult: Select2TemplateFunction = (state: Select2OptionData): JQuery | string => {
+    if (!state.id) {
+      return state.text;
+    }
+
+    let image = '<span class="image"></span>';
+
+    if (state.additional.image) {
+      image = '<span class="image"><img src="' + state.additional.image + '"</span>';
+    }
+
+    return jQuery('<span><b>' + state.additional.winner + '.</b> ' + image + ' ' + state.text + '</span>');
+  }
+
+  // function for selection template
+  public templateSelection: Select2TemplateFunction = (state: Select2OptionData): JQuery | string => {
+    if (!state.id) {
+      return state.text;
+    }
+    let image = '<span class="image"></span>';
+
+    if (state.additional.image) {
+      image = '<span class="image"><img src="' + state.additional.image + '"</span>';
+    }
+
+    return jQuery('<span><b>' + state.additional.winner + '.</b>' + image + ' ' + state.text + '</span>');
   }
 
 }
