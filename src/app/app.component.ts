@@ -47,7 +47,7 @@ export class AppComponent implements OnInit {
         text: 'Fund 01',
         additional : {
           image : 'assets/anz.png',
-          winner : '001'
+          winner : 'Provider'
         }
       },
       {
@@ -55,7 +55,7 @@ export class AppComponent implements OnInit {
         text: 'Fund 02',
         additional : {
           image : './assets/cba.png',
-          winner : '001'
+          winner : 'Bank'
         }
       },
       {
@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
         text: 'Fund 03',
         additional : {
           image : '../assets/bgl.png',
-          winner : '001'
+          winner : 'Provider'
         }
       },
       {
@@ -71,7 +71,7 @@ export class AppComponent implements OnInit {
         text: 'Fund 04',
         additional : {
           image : '../assets/cup.png',
-          winner : '001'
+          winner : 'Provide'
         }
       }
     ];
@@ -93,13 +93,13 @@ export class AppComponent implements OnInit {
       return state.text;
     }
 
-    let image = '<span class="image"></span>';
+    let image = '<span class="pro-image"></span>';
 
     if (state.additional.image) {
-      image = '<span class="image"><img src="' + state.additional.image + '"</span>';
+      image = '<span class="pro-image-h"><img src="' + state.additional.image + '"></span>';
     }
 
-    return jQuery('<span><b>' + state.additional.winner + '.</b> ' + image + ' ' + state.text + '</span>');
+    return jQuery('<span class="label-prov"><b>' + state.additional.winner + '</b></span>' + image + '<span class="proname">' + state.text + '</span>');
   }
 
   // function for selection template
@@ -107,13 +107,13 @@ export class AppComponent implements OnInit {
     if (!state.id) {
       return state.text;
     }
-    let image = '<span class="image"></span>';
+    let image = '<span class="pro-image"></span>';
 
     if (state.additional.image) {
-      image = '<span class="image"><img src="' + state.additional.image + '"</span>';
+      image = '<span class="pro-image-h"><img src="' + state.additional.image + '" ></span>';
     }
 
-    return jQuery('<span><b>' + state.additional.winner + '.</b>' + image + ' ' + state.text + '</span>');
+    return jQuery('<span class="label-prov"><b>' + state.additional.winner + '</b></span>' + image + '<span class="proname">' + state.text + '</span>');
   }
 
 }

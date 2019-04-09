@@ -10,3 +10,54 @@ span.form-control-select.form-control-select2.select2.select2-container {
   background: #c4e5f6;
   border-radius: 3px;
 }
+
+.select-icon {
+  width: 100%;
+}
+
+.select-icon select2 {
+  width: 100%;
+  display: block;
+}
+
+.select-icon .select2-container {
+  width: 100% !important;
+}
+
+.select-icon .select2-container .select2-selection--single {
+  height: 44px;
+}
+
+
+.select-icon .select2-selection__rendered {
+  height: 35px;
+}
+
+.select-icon span.label-prov {
+  position: absolute;
+  padding-left: 10px;
+  top: -1px;
+  font-size: 10px;
+  color: #0f84e1;
+}
+
+.select-icon span.pro-image-h {
+  float: left;
+  margin-top: 4px;
+}
+
+.select-icon span.pro-image-h img {
+  width: 100%;
+}
+
+.select-icon span.proname {
+  position: relative;
+  padding-left: 8px;
+  top: 12px;
+  font-weight: 600;
+}
+
+.select-icon span.select2-selection__arrow {
+  top: 8px !important;
+  position: relative;
+}
