@@ -99,7 +99,7 @@ export class AppComponent implements OnInit {
       image = '<span class="pro-image-h"><img src="' + state.additional.image + '"></span>';
     }
 
-    return jQuery('<span class="label-prov"><b>' + state.additional.winner + '</b></span>' + image + '<span class="proname">' + state.text + '</span>');
+    return jQuery('<span class="select-icon"><span class="label-prov"><b>' + state.additional.winner + '</b></span>' + image + '<span class="proname">' + state.text + '</span></span>');
   }
 
   // function for selection template

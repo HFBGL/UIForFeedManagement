@@ -44,6 +44,7 @@ span.form-control-select.form-control-select2.select2.select2-container {
 .select-icon span.pro-image-h {
   float: left;
   margin-top: 4px;
+  min-width: 28px;
 }
 
 .select-icon span.pro-image-h img {
@@ -60,4 +61,21 @@ span.form-control-select.form-control-select2.select2.select2-container {
 .select-icon span.select2-selection__arrow {
   top: 8px !important;
   position: relative;
+}
+
+.select2-results__option .select-icon {
+  height: 37px;
+  display: block;
+  position: relative;
+}
+
+.select2-results__option .select-icon span.label-prov {
+  color: #454545;
+}
+
+.switch-toggle.switch-ios.sf360-style-switch span.badge {
+  font-size: 10px;
+  padding: 2px 7px;
+  line-height: 10px;
+  margin-left: 5px;
 }
