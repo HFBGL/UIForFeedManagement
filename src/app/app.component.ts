@@ -44,34 +44,34 @@ export class AppComponent implements OnInit {
     this.exampletempateData = [
       {
         id: '475869',
-        text: 'Fund 01',
+        text: 'ANZ Bank',
         additional : {
-          image : 'assets/anz.png',
-          winner : 'Provider'
+          image : 'assets/anz.svg',
+          winner : 'Business bank'
         }
       },
       {
         id: '89564849',
-        text: 'Fund 02',
+        text: 'Commonwealth bank',
         additional : {
-          image : './assets/cba.png',
-          winner : 'Bank'
+          image : './assets/cba.svg',
+          winner : 'Business bank'
         }
       },
       {
         id: '456586',
-        text: 'Fund 03',
+        text: 'BGL Corporate Solutions',
         additional : {
-          image : '../assets/bgl.png',
-          winner : 'Provider'
+          image : '../assets/bgl.svg',
+          winner : 'Software company'
         }
       },
       {
         id: '8458603',
-        text: 'Fund 04',
+        text: 'ING Australia',
         additional : {
-          image : '../assets/cup.png',
-          winner : 'Provide'
+          image : '../assets/ing.svg',
+          winner : 'Consumer banking company'
         }
       }
     ];
@@ -79,6 +79,7 @@ export class AppComponent implements OnInit {
     this.optionstempate = {
       templateResult: this.templateResult,
       templateSelection: this.templateSelection,
+      theme: ' select-withImage '
     }
 
   }
