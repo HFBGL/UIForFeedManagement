@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   public exampletempateData: Array<Select2OptionData>;
   public options: Select2Options;
   public optionstempate: Select2Options;
+  public optionscetempate: Select2Options;
 
 
 
@@ -71,7 +72,7 @@ export class AppComponent implements OnInit {
         text: 'ING Australia',
         additional : {
           image : '../assets/ing.svg',
-          winner : 'Consumer banking company'
+          winner : 'Banking company'
         }
       }
     ];
@@ -81,6 +82,14 @@ export class AppComponent implements OnInit {
       templateSelection: this.templateSelection,
       theme: ' select-withImage '
     }
+
+    this.optionscetempate = {
+      templateResult: this.templateResult,
+      templateSelection: this.templateSelection,
+      theme: ' select-withImage ce-box-drop'
+    }
+
+
 
   }
 
