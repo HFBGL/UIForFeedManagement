@@ -6,10 +6,6 @@
   padding-right: 0px;
 }
 
-.btn {
-  margin-right: 5px;
-}
-
 .btn-group .btn {
   margin-right: 0px;
 }
@@ -23,7 +19,7 @@
 }
 
 .wrapper2, .row {
-  height: inherit;
+  height: auto;
 }
 
 span.icon-status.icon-warning i {
@@ -648,7 +644,7 @@ li.selctor-hold .form-group {
 }
 
 .box-ce {
-  background: #f7f7f7;
+  background: #fdfdfd;
   min-height: 140px;
   border: 1px solid #E2E2E2;
   border-radius: 3px;
@@ -719,6 +715,15 @@ span.select2-selection__arrow {
   flex-flow: row wrap;
   width: calc(33% - 10px);
   margin: 0px 5px;
+
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.box-ce:hover {
+  -webkit-box-shadow: 0 8px 6px -6px rgba(119, 119, 119, 0.3);
+  -moz-box-shadow: 0 8px 6px -6px rgba(119, 119, 119, 0.3);
+  box-shadow: 0 8px 6px -6px rgba(119, 119, 119, 0.3);
 }
 
 .box-ce > * {
@@ -757,3 +762,83 @@ span.acc-icon img {
   width: calc(100% - 44px);
   display: inline-block;
 }
+
+label.switch-light.switch-mini {
+  display: inline-block;
+  width: 33px;
+  top: 6px;
+  height: 16px;
+  left: 7px;
+}
+
+label.switch-light.switch-mini * {
+  outline: none !important;
+}
+
+.switch-ios.switch-light.switch-mini a {
+  width: 20px;
+  height: 20px;
+}
+
+.switch-ios.switch-light.switch-mini > span {
+  height: 15px;
+  min-height: 20px;
+}
+
+.switch-ios.switch-light.switch-mini > span span {
+  height: 20px;
+  color: transparent !important;
+}
+
+.switch-ios.switch-light.switch-mini input:checked ~ span a {
+  margin-left: -19px;
+}
+
+a.btn.btn-xs.pull-right.icon-btn-color i {
+  padding: 0px;
+  color: #6f6f6f;
+}
+
+.has-feedback label ~ .form-control-feedback {
+  top: 23px;
+  right: 5px;
+}
+
+.scroll-conent {
+  display: inline-block;
+  height: calc(100vh - 250px);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.box-ce.add_newBank {
+  border: 2px dashed #BDBDBE;
+}
+
+button.btn.addn_newAccount {
+  color: #03A9F4;
+  background: transparent;
+  outline: none;
+}
+
+button.btn.addn_newAccount i.material-icons {
+  display: block;
+}
+
+.acc-details {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.acc-details:after {
+  display: block;
+  content: " ";
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  border-bottom: 1px solid #e8e7e7;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+

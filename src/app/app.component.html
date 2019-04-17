@@ -266,59 +266,93 @@
             </div>
           </div>
 
-          <div class="row padding-top">
-            <div class="col-md-8 col-md-offset-2">
-              <h5>Feed Type</h5>
-              <ul class="nav nav-pills nav-justified big-button-sf">
-                <li role="presentation" class="active"><a href="#">Bank</a></li>
-                <li role="presentation"><a href="#">Contract Notes</a></li>
-                <li role="presentation"><a href="#">Registry Data</a></li>
-                <li role="presentation"><a href="#">Wraps & Platforms</a></li>
-              </ul>
-            </div>
+          <div class="scroll-conent">
 
-          </div>
-
-          <div class="row padding-top">
-            <div class="col-md-8 col-md-offset-2">
-              <h5>Are you setting up for</h5>
-              <ul class="nav nav-pills nav-justified big-button-sf">
-                <li role="presentation" class="selctor-hold">
-
-                  <div class="form-group">
-                    <select2 [data]="exampleData" [cssImport]=true [options]="options"></select2>
-                  </div>
-
-
-
-                </li>
-                <li role="presentation"><a href="#">Multiple funds</a></li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="row padding-top">
-            <div class="col-md-8 col-md-offset-2">
-
-              <div class="select-icon">
-                <select2 [data]="exampletempateData" [width]="150" [options]="optionstempate"></select2>
+            <div class="row padding-top">
+              <div class="col-md-8 col-md-offset-2">
+                <h5>Feed Type</h5>
+                <ul class="nav nav-pills nav-justified big-button-sf">
+                  <li role="presentation" class="active"><a href="#">Bank</a></li>
+                  <li role="presentation"><a href="#">Contract Notes</a></li>
+                  <li role="presentation"><a href="#">Registry Data</a></li>
+                  <li role="presentation"><a href="#">Wraps & Platforms</a></li>
+                </ul>
               </div>
 
             </div>
-          </div>
+            <div class="row padding-top">
+              <div class="col-md-8 col-md-offset-2">
+                <h5>Are you setting up for</h5>
+                <ul class="nav nav-pills nav-justified big-button-sf">
+                  <li role="presentation" class="selctor-hold">
 
-          <div class="row padding-top">
-            <div class="col-md-8 col-md-offset-2">
+                    <div class="form-group">
+                      <select2 [data]="exampleData" [cssImport]=true [options]="options"></select2>
+                    </div>
 
-              <div class="row display-flex">
 
-                  <div class="box-ce effect1">
+
+                  </li>
+                  <li role="presentation"><a href="#">Multiple funds</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row padding-top">
+              <div class="col-md-8 col-md-offset-2">
+
+                <div class="select-icon">
+                  <select2 [data]="exampletempateData" [width]="150" [options]="optionstempate"></select2>
+                </div>
+
+              </div>
+            </div>
+            <div class="row padding-top">
+              <div class="col-md-8 col-md-offset-2">
+
+                <div class="row display-flex">
+
+                    <div class="box-ce ">
+                        <div class="account-block">
+                          <span class="acc-icon">
+                            <img src="../assets/ing.svg"/>
+                          </span>
+                          <span class="acc-heading">ING Bank</span>
+                          <a href="#" class="btn btn-xs pull-right icon-btn-color"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                        </div>
+
+                        <div class="acc-details">
+                          <dl class="dl-horizontal box-ce-dl">
+                            <dt>BSB</dt>
+                            <dd>063-055</dd>
+                            <dt>ACC</dt>
+                            <dd>12345689</dd>
+                          </dl>
+                        </div>
+
+                      <div class="feed-con">
+                        <div class="select-icon">
+                          <select2 [data]="exampletempateData" [width]="150" [options]="optionscetempate"></select2>
+                        </div>
+
+                        <label class="switch-light switch-ios sf360-twoitem-switch switch-mini" onclick="">
+                          <input type="checkbox">
+                          <span>
+                            <span>Off</span>
+                            <span>On</span>
+                            <a></a>
+                          </span>
+                        </label>
+
+                      </div>
+                    </div>
+
+                    <div class="box-ce ">
                       <div class="account-block">
-                        <span class="acc-icon">
-                          <img src="../assets/ing.svg"/>
-                        </span>
-                        <span class="acc-heading">ING Bank</span>
-                        <button class="btn icon-btn pull-right">E</button>
+                          <span class="acc-icon">
+                            <img src="../assets/wes.svg"/>
+                          </span>
+                        <span class="acc-heading">Westpack Bank</span>
+                        <a href="#" class="btn btn-xs pull-right icon-btn-color"><i class="fa fa-cog" aria-hidden="true"></i></a>
                       </div>
 
                       <div class="acc-details">
@@ -330,71 +364,70 @@
                         </dl>
                       </div>
 
-                    <div class="feed-con">
-                      <div class="select-icon">
-                        <select2 [data]="exampletempateData" [width]="150" [options]="optionscetempate"></select2>
+                      <div class="feed-con">
+                        <div class="select-icon">
+                          <select2 [data]="exampletempateData" [width]="150" [options]="optionscetempate"></select2>
+                        </div>
+
+                        <label class="switch-light switch-ios sf360-twoitem-switch switch-mini" onclick="">
+                          <input type="checkbox">
+                          <span>
+                            <span>Off</span>
+                            <span>On</span>
+                            <a></a>
+                          </span>
+                        </label>
+
                       </div>
-                      <button class="switch-toggle-btn btn">S</button>
                     </div>
+
+                    <div class="box-ce add_newBank">
+                      <button class="btn  addn_newAccount">
+                        <i class="material-icons">add_circle_outline</i>
+                        <label>Add New Bank</label>
+                      </button>
+                    </div>
+
                   </div>
 
-                  <div class="box-ce effect1">
-                    <div class="account-block">
-                        <span class="acc-icon">
-                          <img src="../assets/wes.svg"/>
-                        </span>
-                      <span class="acc-heading">Westpack Bank</span>
-                      <button class="btn icon-btn pull-right">E</button>
-                    </div>
+              </div>
+            </div>
+            <div class="row padding-top">
+            <div class="col-md-8 col-md-offset-2">
 
-                    <div class="acc-details">
-                      <dl class="dl-horizontal box-ce-dl">
-                        <dt>BSB</dt>
-                        <dd>063-055</dd>
-                        <dt>ACC</dt>
-                        <dd>12345689</dd>
-                      </dl>
-                    </div>
+              <div class="form-group">
+                <label for="usr">Text input</label>
+                <input type="text" class="form-control" id="usr">
+              </div>
 
-                    <div class="feed-con">
-                      <div class="select-icon">
-                        <select2 [data]="exampletempateData" [width]="150" [options]="optionscetempate"></select2>
-                      </div>
-                      <button class="switch-toggle-btn btn">S</button>
-                    </div>
-                  </div>
+              <div class="form-group has-feedback">
+                <label for="usrpass">Password</label>
+                <input type="password" class="form-control" id="usrpass">
+                <span class="glyphicon glyphicon-eye-open form-control-feedback"></span>
+              </div>
 
-                  <div class="box-ce effect1">
-                    <div class="account-block">
-                        <span class="acc-icon">
-                          <img src="../assets/meq.svg"/>
-                        </span>
-                      <span class="acc-heading">Macquarie Bank</span>
-                      <button class="btn icon-btn pull-right">E</button>
-                    </div>
-
-                    <div class="acc-details">
-                      <dl class="dl-horizontal box-ce-dl">
-                        <dt>BSB</dt>
-                        <dd>063-055</dd>
-                        <dt>ACC</dt>
-                        <dd>12345689</dd>
-                      </dl>
-                    </div>
-
-                    <div class="feed-con">
-                      <div class="select-icon">
-                        <select2 [data]="exampletempateData" [width]="150" [options]="optionscetempate"></select2>
-                      </div>
-                      <button class="switch-toggle-btn btn">S</button>
-                    </div>
-                  </div>
-
+              <div class="form-group">
+                <label for="comment">Select item</label>
+                <div class="for-select-wrap">
+                  <select class="form-control for-select" id="comment">
+                    <option value="SMSF">SMSF</option>
+                    <option value="SMSF">LOLC</option>
+                  </select>
                 </div>
+              </div>
+
+              <div class="form-group">
+                <label for="comment">Select item</label>
+                <div class="for-select-wrap multiple-select">
+                  <select2 [data]="exampleData" [width]="150" [options]="optionsMultiple"></select2>
+                </div>
+              </div>
+
 
             </div>
           </div>
 
+          </div>
 
         </div>
 

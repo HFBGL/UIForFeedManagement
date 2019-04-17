@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   public exampleData: Array<Select2OptionData>;
   public exampletempateData: Array<Select2OptionData>;
   public options: Select2Options;
+  public optionsMultiple: Select2Options;
   public optionstempate: Select2Options;
   public optionscetempate: Select2Options;
 
@@ -87,6 +88,11 @@ export class AppComponent implements OnInit {
       templateResult: this.templateResult,
       templateSelection: this.templateSelection,
       theme: ' select-withImage ce-box-drop'
+    }
+
+    this.optionsMultiple = {
+      multiple: true,
+      closeOnSelect: false
     }
 
 
